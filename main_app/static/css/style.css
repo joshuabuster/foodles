@@ -1,10 +1,6 @@
 :root {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
-  /* --text-primary: #69645b;
-  --text-secondary: ;
-  --bg-primary: #dfdcd4;
-  --bg-secondary: #88b04b; */
   background-color: #2d2926;
   color: #69645b;
 }
@@ -29,13 +25,6 @@ body::-webkit-scrollbar {
   width: .25rem;
 }
 
-/* body::-webkit-scrollbar-track {
-background: black;  
-}
-
-body::-webkit-scrollbar-track {
-  background: coral;
-} */
 
 main {
   flex: 1 0 auto;
@@ -72,9 +61,6 @@ footer.page-footer {
   margin: 0 auto;
 }
 
-/* .nav-item:first-child {
-  margin-top: auto;
-} */
 
 .nav-link {
   display: flex;
