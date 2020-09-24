@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<h1>My Recent Meals</h1>
+<h1 class="center-align">My Recent Meals</h1>
 
 {% for meal in meal_list %}
 <a href="{% url 'meals_detail' meal.id %}">
