@@ -27,6 +27,7 @@ Pitch Deck => [Pitch-Deck](https://docs.google.com/presentation/d/1yKKEjfVX1aSrk
 # Next Steps:
 
 * View recipes by cuisine type
+* Add feature to display reminder message to make a favorite recipe
 * Add search feature
 
 
