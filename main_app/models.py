@@ -3,8 +3,6 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 from datetime import date
 
-# Create your models here.
-
 MEAL_TYPE = (
     ('B', 'Breakfast'),
     ('L', 'Lunch'),
