@@ -34,10 +34,10 @@ def signup(request):
   context = {'form': form, 'error_message': error_message}
   return render(request, 'registration/signup.html', context)
 
-class RecipeList(ListView):
+class RecipeList(LoginRequiredMixin, ListView):
   model = Recipe
 
-class RecipeDetail(DetailView):
+class RecipeDetail(LoginRequiredMixin, DetailView):
   model = Recipe
 
 class RecipeCreate(LoginRequiredMixin, CreateView):
@@ -55,10 +55,10 @@ class RecipeDelete(LoginRequiredMixin, DeleteView):
   model = Recipe
   success_url = '/recipe/'
 
-class MealList(ListView):
+class MealList(LoginRequiredMixin, ListView):
   model = Meal
 
-class MealDetail(DetailView):
+class MealDetail(LoginRequiredMixin, DetailView):
   model = Meal
 
 class MealCreate(LoginRequiredMixin, CreateView):
