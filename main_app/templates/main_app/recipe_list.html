@@ -6,7 +6,7 @@
   <a class="btn-small" href="{% url 'view_favorites' %}">Favorite Recipes</a>
   <a class="btn-small" href="{% url 'view_by_main' %}">Recipes By Main Ingredient</a>
 </div>
-{% for recipe in recipe_list %}
+{% for recipe in recipes %}
   <a href="{% url 'recipes_detail' recipe.id %}">
     <div class="card card-list">
         <div class="card-content">

@@ -4,7 +4,7 @@
 
 <h1 class="center-align">My Recent Meals</h1>
 
-{% for meal in meal_list %}
+{% for meal in meals %}
 <a href="{% url 'meals_detail' meal.id %}">
 <div class="card card-list">
   <div class="card-content">

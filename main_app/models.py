@@ -47,6 +47,7 @@ class Meal(models.Model):
         choices=MEAL_TYPE,
         default=MEAL_TYPE[0][0]
     )
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return str(self.id)
