@@ -34,9 +34,6 @@ def signup(request):
   context = {'form': form, 'error_message': error_message}
   return render(request, 'registration/signup.html', context)
 
-# class RecipeList(LoginRequiredMixin, ListView):
-#   model = Recipe
-
 def recipe_index(request):
   recipes = Recipe.objects.filter(user=request.user)
   return render(request, 'main_app/recipe_list.html', {'recipes': recipes})
@@ -58,9 +55,6 @@ class RecipeUpdate(LoginRequiredMixin, UpdateView):
 class RecipeDelete(LoginRequiredMixin, DeleteView):
   model = Recipe
   success_url = '/recipe/'
-
-# class MealList(LoginRequiredMixin, ListView):
-#   model = Meal
 
 def meal_index(request):
   meals = Meal.objects.filter(user=request.user)
